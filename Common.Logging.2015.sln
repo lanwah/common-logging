@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Logging.Portable", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Logging.TestUtils", "test\Common.Logging.TestUtils\Common.Logging.TestUtils.csproj", "{F5193CD8-B431-48ED-B101-D8DBEF766140}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Logging.Demo", "Common.Logging.Demo\Common.Logging.Demo.csproj", "{A87F8A53-88FB-435F-B948-392E6AAEDFD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +133,10 @@ Global
 		{F5193CD8-B431-48ED-B101-D8DBEF766140}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5193CD8-B431-48ED-B101-D8DBEF766140}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5193CD8-B431-48ED-B101-D8DBEF766140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A87F8A53-88FB-435F-B948-392E6AAEDFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A87F8A53-88FB-435F-B948-392E6AAEDFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A87F8A53-88FB-435F-B948-392E6AAEDFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A87F8A53-88FB-435F-B948-392E6AAEDFD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,6 +159,7 @@ Global
 		{5EB570BA-AA0A-4FD9-A391-E03A2D6EDB45} = {D26BC7B2-718C-4F97-AF36-4377E19ECE62}
 		{053249C9-FF33-4FB4-A217-49FF6099B338} = {D26BC7B2-718C-4F97-AF36-4377E19ECE62}
 		{F5193CD8-B431-48ED-B101-D8DBEF766140} = {D26BC7B2-718C-4F97-AF36-4377E19ECE62}
+		{A87F8A53-88FB-435F-B948-392E6AAEDFD7} = {D26BC7B2-718C-4F97-AF36-4377E19ECE62}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED92463D-D1C8-4CDE-BB82-2FCBCC3667B0}

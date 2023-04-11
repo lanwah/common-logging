@@ -2,6 +2,8 @@
 
 于2023/04/11从[net-commons/common-logging](https://github.com/net-commons/common-logging)迁出，以便代码的升级和bug修复。
 
+虽然开源的日志库有很多，还是希望用到此库发现问题的人员能提出bug一起参与维护此库。
+
 ## Project Build Status
 
 [![Build status](https://ci.appveyor.com/api/projects/status/nyht5oguhan7gk2c/branch/master?svg=true)](https://ci.appveyor.com/project/sbohlen/common-logging/branch/master)
@@ -111,11 +113,33 @@ See module documentation and [Source Forge](http://netcommon.sf.net/) for other 
 
 The Common Infrastructure Libraries for .NET are released under the terms of the Apache Software License (see [license.txt](license.txt)).
 
-
 ## Building
 
 * Clone the [GitHub repository](https://github.com/net-commons/common-logging) 
+
 * Install Silverlight SDK 5
+
 * [Optional] Install Java for the documentation builder
+
 * Create a strong name key. `c:\netcommon>sn -k common.net.snk`
+
 * Build the the solution. `c:\netcommon>build-release.cmd`
+
+## 修改记录
+
+1. 2023年4月11日 > 修正ConsoleOutLoggerFactoryAdapter不支持通过配置文件配置useColor参数开启根据日志级别输出控制台日志的功能。
+   配置文件中可以通过如下方式进行配置
+   
+   ```C#
+     <common>
+       <logging>
+         <factoryAdapter type="Common.Logging.Simple.ConsoleOutLoggerFactoryAdapter, Common.Logging">
+           <arg key="level" value="Trace" />
+           <arg key="useColor" value="true" />
+         </factoryAdapter>
+       </logging>
+     </common>
+   ```
+   
+   
+

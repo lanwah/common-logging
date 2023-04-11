@@ -1,7 +1,7 @@
 #region License
 
 /*
- * Copyright © 2002-2009 the original author or authors.
+ * Copyright ?2002-2009 the original author or authors.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -70,7 +70,8 @@ namespace Common.Logging.Simple
         /// </summary>
         public ConsoleOutLoggerFactoryAdapter()
             : base(null)
-        { }
+        {
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ConsoleOutLoggerFactoryAdapter"/> class.
@@ -86,7 +87,9 @@ namespace Common.Logging.Simple
         /// a configuration section named common/logging.</param>
         public ConsoleOutLoggerFactoryAdapter(NameValueCollection properties)
             : base(properties)
-        { }
+        {
+            this.useColor = ArgUtils.TryParse(false, properties["useColor"]);
+        }
 
 #if !SILVERLIGHT
         /// <summary>
@@ -96,7 +99,8 @@ namespace Common.Logging.Simple
         [Obsolete("Use Constructor taking Common.Logging.Configuration.NameValueCollection instead")]
         public ConsoleOutLoggerFactoryAdapter(System.Collections.Specialized.NameValueCollection properties)
             : this(NameValueCollectionHelper.ToCommonLoggingCollection(properties))
-        { }
+        {
+        }
 #endif
 
         /// <summary>
@@ -105,13 +109,20 @@ namespace Common.Logging.Simple
         /// </summary>
         public ConsoleOutLoggerFactoryAdapter(LogLevel level, bool showDateTime, bool showLogName, bool showLevel, string dateTimeFormat)
             : base(level, showDateTime, showLogName, showLevel, dateTimeFormat)
-        { }
+        {
+        }
 
 #if !SILVERLIGHT
         /// <summary>
         /// Initializes a new instance of the <see cref="AbstractSimpleLoggerFactoryAdapter"/> class with 
         /// default settings for the loggers created by this factory.
         /// </summary>
+        /// <param name="level">Êä³öµÄ×îÐ¡ÈÕÖ¾¼¶±ð</param>
+        /// <param name="showDateTime">ÊÇ·ñÏÔÊ¾ÈÕÆÚ</param>
+        /// <param name="showLogName">ÊÇ·ñÏÔÊ¾ÈÕÖ¾ÎÄ¼þÃû³Æ</param>
+        /// <param name="showLevel">ÊÇ·ñÏÔÊ¾ÈÕÖ¾¼¶±ð</param>
+        /// <param name="dateTimeFormat">¸ñÊ½»¯×Ö·û´®</param>
+        /// <param name="useColor">ÊÇ·ñ¸ù¾ÝÈÕÖ¾¼¶±ðÏÔÊ¾ÏàÓ¦µÄÑÕÉ«</param>
         public ConsoleOutLoggerFactoryAdapter(LogLevel level, bool showDateTime, bool showLogName, bool showLevel, string dateTimeFormat, bool useColor)
             : this(level, showDateTime, showLogName, showLevel, dateTimeFormat)
         {
