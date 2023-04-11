@@ -130,7 +130,7 @@ The Common Infrastructure Libraries for .NET are released under the terms of the
 1. 2023年4月11日 > 修正ConsoleOutLoggerFactoryAdapter不支持通过配置文件配置useColor参数开启根据日志级别输出控制台日志的功能。
    配置文件中可以通过如下方式进行配置
    
-   ```C#
+   ```xml
      <common>
        <logging>
          <factoryAdapter type="Common.Logging.Simple.ConsoleOutLoggerFactoryAdapter, Common.Logging">
