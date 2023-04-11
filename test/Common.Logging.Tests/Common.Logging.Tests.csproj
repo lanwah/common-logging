@@ -127,17 +127,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Common.Logging.Core\Common.Logging.Core.2010.csproj">
-      <Project>{7eeb2191-b3fc-4509-aa4b-a345c386eeed}</Project>
-      <Name>Common.Logging.Core.2010</Name>
+    <ProjectReference Include="..\..\src\Common.Logging.Core\Common.Logging.Core.csproj">
+      <Project>{5eb570ba-aa0a-4fd9-a391-e03a2d6edb45}</Project>
+      <Name>Common.Logging.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Common.Logging\Common.Logging.2010-net40.csproj">
+    <ProjectReference Include="..\..\src\Common.Logging\Common.Logging.csproj">
       <Project>{440D903A-D409-48FC-A6C4-3EE69CCD663B}</Project>
-      <Name>Common.Logging.2010-net40</Name>
+      <Name>Common.Logging</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Common.Logging.TestUtils\Common.Logging.TestUtils-net40.csproj">
-      <Project>{F5193CD8-B431-48ED-B101-D8DBEF766140}</Project>
-      <Name>Common.Logging.TestUtils-net40</Name>
+    <ProjectReference Include="..\Common.Logging.TestUtils\Common.Logging.TestUtils.csproj">
+      <Project>{f5193cd8-b431-48ed-b101-d8dbef766140}</Project>
+      <Name>Common.Logging.TestUtils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

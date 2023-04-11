@@ -16,7 +16,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
@@ -184,9 +184,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common.Logging.Core\Common.Logging.Core.2010.csproj">
-      <Project>{7eeb2191-b3fc-4509-aa4b-a345c386eeed}</Project>
-      <Name>Common.Logging.Core.2010</Name>
+    <ProjectReference Include="..\Common.Logging.Core\Common.Logging.Core.csproj">
+      <Project>{5eb570ba-aa0a-4fd9-a391-e03a2d6edb45}</Project>
+      <Name>Common.Logging.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

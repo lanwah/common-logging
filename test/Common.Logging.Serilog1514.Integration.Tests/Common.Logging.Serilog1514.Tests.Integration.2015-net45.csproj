@@ -110,21 +110,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Common.Logging.Core\Common.Logging.Core.2010.csproj">
-      <Project>{7eeb2191-b3fc-4509-aa4b-a345c386eeed}</Project>
-      <Name>Common.Logging.Core.2010</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\src\Common.Logging.Serilog1514\Common.Logging.Serilog1514.2015-net45.csproj">
       <Project>{c515056c-4d5d-4cea-a3d9-d4d96ebcb246}</Project>
       <Name>Common.Logging.Serilog1514.2015-net45</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Common.Logging\Common.Logging.2010-net40.csproj">
+    <ProjectReference Include="..\..\src\Common.Logging\Common.Logging.csproj">
       <Project>{440D903A-D409-48FC-A6C4-3EE69CCD663B}</Project>
-      <Name>Common.Logging.2010-net40</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Common.Logging.TestUtils\Common.Logging.TestUtils-net40.csproj">
-      <Project>{F5193CD8-B431-48ED-B101-D8DBEF766140}</Project>
-      <Name>Common.Logging.TestUtils-net40</Name>
+      <Name>Common.Logging</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -133,7 +125,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="ee5ca38f-3f29-43e1-b385-03798eddc765" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="ee5ca38f-3f29-43e1-b385-03798eddc765" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
